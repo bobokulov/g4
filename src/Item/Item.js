@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 import './Item.css'
+import home from '../img/home.jpg'
+
 export default class Item extends Component {
     render() {
         return (
             <div className='item'>
-                <p className='item-text'>Home</p>
+                <img src={this.props.home} alt='img' className='item-img' />
+                 <p className='item-text'>{this.props.title} </p>
             </div>
-        )
+        );
     }
 }
