@@ -1,4 +1,21 @@
 .item{
-    display: flex;
-    width: 10px;
+    display: flex; 
+    width: 100px;
+    align-items: center;
+    margin-top: 25px;
+
+}
+.item-text{
+font-family: Product Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 17px;
+
+color: #838383; 
+}
+.item-img{
+    width: 20px;
+    height: 20px;
+    margin-right:  21px;
 }

@@ -2,12 +2,12 @@
     width: 240px;
     border: 1px solid red;
     height: 100vh;
-    padding: 32px 0 40px 45px;
+    padding: 32px 0 40px 40px;
 }
 .logo-wrapper{
     display: flex;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 87px;
 
 }
 .logo{

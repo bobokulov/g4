@@ -1,13 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React, { Component } from 'react';
+import 'react-dom';
 import Body from './body/body'
 import Navbar from './navbar/navbar'
 import Sidebar from './sidebar/sidebar'
-import Index from './index.css'
+import './index.css'; 
 
 
-ReactDOM.render(
-  <React.StrictMode>
+export default class index extends Component {
+  render() {
+    return (
+  
   <div className='container'>
        <Sidebar />
     <div className='body-wrapper' >
@@ -16,7 +18,6 @@ ReactDOM.render(
     </div>
 
   </div>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
+  )
+}
+}
