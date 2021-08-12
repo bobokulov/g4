@@ -1,8 +1,0 @@
-.container{
-  display: flex;
-  margin: 20px;
-}
-.body-wrapper{
-  flex: 1;
-  border: 1px solid red;
-}
