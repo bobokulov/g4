@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import ReactDom from 'react-dom';
 import './App.css';
-import Index from './index';
+import Index from './index.js';
 
-expect default class App extends Component {
+export default class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -16,8 +16,31 @@ expect default class App extends Component {
             
         };
     }
-    render(){
-        return 
-        <div><table>hallo</table></div>
-    }
-}
+        render(){
+        return (
+        <div>
+        <table border='1' style={{ borderCollapse: 'collapse'}}>
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Status</td>
+                <td>Action</td>
+            </tr>
+            {this.state.data.map((value) => {
+                return(
+            <tr>
+                <td>1</td>
+                <td>Jumanazar</td>
+                <td>Low</td>
+                <td>
+                    <button>Delete</button>
+                </td>
+            </tr>
+                );
+            })}
+           
+        </table>
+        </div>
+        )
+    };
+};
